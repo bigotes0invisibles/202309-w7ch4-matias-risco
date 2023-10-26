@@ -1,7 +1,12 @@
-import { createContext } from "react";
+import { Dispatch, SetStateAction, createContext } from "react";
 
-const PerezosoContext = createContext<PerezososStructure>(
-  {} as PerezososStructure,
+interface PerezosoContextProps {
+  perezosos: PerezososStructure[];
+  setPerezosos: Dispatch<SetStateAction<PerezososStructure[]>>;
+}
+
+const PerezosoContext = createContext<PerezosoContextProps>(
+  {} as PerezosoContextProps,
 );
 
 export default PerezosoContext;
