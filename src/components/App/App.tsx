@@ -1,10 +1,10 @@
 import Form from "../Form/Form";
-
+import AppStyled from "./AppStyled";
 const App = (): React.ReactElement => {
   return (
-    <div className="app">
+    <AppStyled className="app">
       <Form />
-    </div>
+    </AppStyled>
   );
 };
 
