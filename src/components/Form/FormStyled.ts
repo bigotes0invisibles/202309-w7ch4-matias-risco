@@ -5,12 +5,14 @@ const FormStyled = styled.form`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: fit-content;
+  }
 
-    &__input {
-      display: flex;
-      flex-direction: row;
-      gap: 5px;
-    }
+  .form__input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
   }
 `;
 export default FormStyled;
