@@ -36,7 +36,7 @@ const Form = (): React.ReactElement => {
   return (
     <FormStyled onSubmit={onFormSubmit} className="form" autoComplete="off">
       <div className="form__input">
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">nombre:</label>
         <input
           type="text"
           id="name"
@@ -46,7 +46,7 @@ const Form = (): React.ReactElement => {
         />
       </div>
       <div className="form__input">
-        <label htmlFor="imageUrl">image url:</label>
+        <label htmlFor="imageUrl">direccion de la imagen:</label>
         <input
           type="url"
           id="imageUrl"
@@ -56,7 +56,7 @@ const Form = (): React.ReactElement => {
         />
       </div>
       <div className="form__input">
-        <label htmlFor="numberFingers">number of fingers:</label>
+        <label htmlFor="numberFingers">numero de dedos:</label>
         <input
           type="number"
           id="numberFingers"
